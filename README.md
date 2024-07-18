@@ -37,4 +37,4 @@ Here is the API documentation URL for this hall booking API project [Click here]
 
 ### Deployed URL 
 
-Here is the Render deployed url for the API giude (click here)[https://hall-booking-with-nodejs.onrender.com]
+Here is the Render deployed url for the API giude [click here](https://hall-booking-with-nodejs.onrender.com)
