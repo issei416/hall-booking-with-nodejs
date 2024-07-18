@@ -34,3 +34,7 @@ The server will be running at http://localhost:4000.
 ### 📚 API Documentation URL
 
 Here is the API documentation URL for this hall booking API project [Click here](https://documenter.getpostman.com/view/36384038/2sA3kSo3QN)
+
+### Deployed URL 
+
+Here is the Render deployed url for the API giude (click here)[https://hall-booking-with-nodejs.onrender.com]

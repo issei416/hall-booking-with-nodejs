@@ -19,6 +19,7 @@ app.get("/", (req, res) => {
       <p>List all rooms with booked data: <b>"/bookings/bookroom"</b></p>
       <p>List all customers with booked data: <b>"/bookings/customers"</b></p>
       <p>List how many times a customer booked room: <b>"/bookings/customerBookings/"</b></p>
+      <p>API DOCUMENTATION URL : <a href="https://documenter.getpostman.com/view/36384038/2sA3kSo3QN" target="_blank">Click here</a></p>
     </div>`
   );
 });
