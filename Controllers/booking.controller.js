@@ -103,7 +103,6 @@ export const getCustomers = (req, res) => {
 };
 
 export const getCustomerBookings = (req, res) => {
-  console.log(req.params);
   const { id } = req.params;
   const customerBookings = bookings.filter(
     (booking) => booking.customer_id === parseInt(id)
