@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import roomRouter from "./Routers/rooms.router.js";
-import bookingRouter from "./Routers/booking.router.js"
+import bookingRouter from "./Routers/booking.router.js";
 
 const PORT = 4000;
 
@@ -9,15 +9,23 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.status(200).send("app is working fine");
-})
+app.get("/", (req, res) => {
+  res.status(200).send(
+    `<div style="display:flex;flex-direction:column;justify-content:center;align-items:center">
+      <h1>API Guide</h1>
+      <p>Create a room : <b>"/rooms/createroom"</b></p>
+      <p>Get all rooms : <b>"/rooms/getrooms"</b></p>
+      <p>Book a room: <b>"/bookings/bookroom"</b></p>
+      <p>List all rooms with booked data: <b>"/bookings/bookroom"</b></p>
+      <p>List all customers with booked data: <b>"/bookings/customers"</b></p>
+      <p>List how many times a customer booked room: <b>"/bookings/customerBookings/"</b></p>
+    </div>`
+  );
+});
 
-app.use('/rooms', roomRouter);
-app.use('/bookings', bookingRouter);
-app.use('/customers', bookingRouter);
-app.use('/customerbookings/:id', bookingRouter);
+app.use("/rooms", roomRouter);
+app.use("/bookings", bookingRouter);
 
 app.listen(PORT, () => {
-    console.log(`server is running on port ${PORT}`);
-})
+  console.log(`server is running on port ${PORT}`);
+});
